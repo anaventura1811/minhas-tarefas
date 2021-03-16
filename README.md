@@ -1,7 +1,4 @@
-### Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
-Manual da Pessoa Estudante da Trybe.
+### Requisitos e Descrição do Projeto To Do List - Turma 10 | Tribo A | Trybe | 2021
 
 # Boas vindas ao repositório do projeto Lista de Tarefas!
 
