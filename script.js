@@ -54,7 +54,7 @@ function removeTaskDone() {
       if (taskCompleted[index].className === 'completed') {
         myListOfTasks.removeChild(taskCompleted[index]);
       }
-    }
+    } clearLocalStorage();
   });
 }
 removeTaskDone();
@@ -67,7 +67,7 @@ function removeTaskSelected() {
     const taskSelected = document.querySelector('.selected');
       if (taskSelected.className === 'selected') {
         myListOfTasks.removeChild(taskSelected);
-      }
+      } clearLocalStorage();
   });
 }
 removeTaskSelected();
