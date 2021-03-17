@@ -25,11 +25,17 @@ function checkCompleteMyListOfTasks(event) {
 const myListOfTasks = document.getElementById('lista-tarefas');
 myListOfTasks.addEventListener('dblclick', checkCompleteMyListOfTasks);
 
+// Limpar o local storage 
+function clearLocalStorage() {
+  localStorage.clear();
+}
+
 // Apaga todos os itens da lista
 function eraseAll() {
   while (myListOfTasks.childElementCount > 0) {
     myListOfTasks.firstElementChild.remove();
   }
+  clearLocalStorage();
 }
 
 const eraseMyList = document.getElementById('apaga-tudo');
@@ -69,10 +75,12 @@ removeTaskSelected();
 // Teste 2 de função de mudança de cor de fundo de item selecionado
 function changeBgColorSelectedItem(e) {
   const bgColor = 'rgb(128, 128, 128)';
-  if (e.target.style.backgroundColor !== bgColor) {
+  if (e.target.style.backgroundColor !== bgColor && e.target.className !== 'selected') {
     e.target.style.backgroundColor = bgColor;
+    e.target.classList.add('selected');
   } else {
     e.target.style.backgroundColor = 'paleturquoise';
+    e.target.classList.remove('selected');
   }
 }
 myListOfTasks.addEventListener('click', changeBgColorSelectedItem);
@@ -100,6 +108,11 @@ window.onload = function initialize() {
 --> https://www.w3schools.com/howto/howto_js_todolist.asp (usei como base para a função checkEachTask)
 --> DUCKETT, Jon. JavaScript & JQuery: desenvolvimento de interfaces web interativas. Rio de Janeiro: AltaBooks, 2015. (Base para entender integração de JS com HTML e CSS)
 --> FLANAGAN, David. JavaScript: the defintive guide. 7 ed. Sebastopol: O'Reilly, 2020. (Base para entender eventos, DOM)
+--> Para a função clearLocalStorage, utilizei a solução do colega Wanderson Sales. Segue link:
+https://github.com/tryber/sd-010-a-project-todo-list/pull/47/files
+--> Sobre uso de symbols no html: 
+https://www.toptal.com/designers/htmlarrows/math/plus-sign/
+https://www.w3schools.com/html/html_symbols.asp
 ---> Agradecimento especial aos colegas Murilo Gonçalves e Lucas Pedroso, pelas sugestões e pela ajuda!! =))
 Os dois me ajudaram a encontrar o erro neste código (que fazia com que uma string 'undefined' retornasse
 na lista de tarefas vazia). Os colegas me ajudaram a corrigir erros nas funções checkEachTask e saveMyTasks.
