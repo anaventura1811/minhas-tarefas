@@ -1,5 +1,6 @@
 .completed { text-decoration: line-through solid black;
   list-style-type: none;
+  font-weight: 700;
 }
 
 body , button , input {
