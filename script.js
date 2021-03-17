@@ -44,7 +44,6 @@ function removeTaskDone() {
   const removeItem = document.querySelector('#remover-finalizados');
   removeItem.addEventListener('click', () => {
     const taskCompleted = document.querySelectorAll('.completed');
-    console.log('Item Removido');
     for (let index = 0; index < taskCompleted.length; index += 1) {
       if (taskCompleted[index].className === 'completed') {
         myListOfTasks.removeChild(taskCompleted[index]);
@@ -53,6 +52,19 @@ function removeTaskDone() {
   });
 }
 removeTaskDone();
+
+// Remover Item Selecionado 
+
+function removeTaskSelected() {
+  const removeItemSelected = document.querySelector('#remover-selecionado');
+  removeItemSelected.addEventListener('click', () => {
+    const taskSelected = document.querySelector('.selected');
+      if (taskSelected.className === 'selected') {
+        myListOfTasks.removeChild(taskSelected);
+      }
+  });
+}
+removeTaskSelected();
 
 // Teste 2 de função de mudança de cor de fundo de item selecionado
 function changeBgColorSelectedItem(e) {
