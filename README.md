@@ -1,6 +1,6 @@
 # Requisitos e Descrição do Projeto To Do List - Turma 10 | Tribo A | Trybe | 2021
 
-*O objetivo deste projeto é criar um site de lista de tarefas, no qual o usuário pode criar listas, salvá-las no Local Storage (para acessá-las posteriormente), apagá-las ou remover alguns itens da lista.
+*O objetivo deste projeto é criar um site de lista de tarefas, no qual o usuário pode criar listas, salvá-las no Local Storage (para acessá-las posteriormente), apagá-las ou remover alguns itens da lista. Para isto, os itens da lista são criados de forma dinâmica com JavaScript.*
 
 ### Requisitos obrigatórios:
 
