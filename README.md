@@ -21,11 +21,13 @@
 - [ ] Adicione dois botões, um com id="mover-cima" e outro com id="mover-baixo", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas
 - [x] Adicione um botão com id="remover-selecionado" que, quando clicado, remove o item selecionado](#14---adicione-um-botão-com-idremover-selecionado-que-quando-clicado-remove-o-item-selecionado
 
-### Habilidades
+### Habilidades desenvolvidas no projeto:
 
 - Manipular CSS
 - Uso de seletores no CSS
 - Javascript
 - Manipulação de DOM e eventos
+- Web Storage
+- Manipulação do Local Storage
 
 
