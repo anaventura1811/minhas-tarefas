@@ -2,6 +2,9 @@
 
 *O objetivo deste projeto é criar um site de lista de tarefas, no qual o usuário pode criar listas, salvá-las no Local Storage (para acessá-las posteriormente), apagá-las ou remover alguns itens da lista. Para isto, os itens da lista são criados de forma dinâmica com JavaScript.*
 
+<img width="857" alt="Captura de Tela 2024-10-12 às 19 19 55" src="https://github.com/user-attachments/assets/e2da3a6c-8c3f-4442-aeab-e2f23a255c52">
+
+
 ### Requisitos obrigatórios:
 
 - [x] Adicione à sua lista o título "Minha Lista de Tarefas" em uma tag <header>
